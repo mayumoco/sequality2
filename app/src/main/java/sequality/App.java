@@ -16,6 +16,39 @@ public class App {
     return (double) (x + y) / 2;
   }
 
+  public int sum(int[] numbers) {
+    int sum = 0;
+    for (int num : numbers) {
+      sum += num;
+    }
+    return sum;
+  }
+
+  public double average(int[] numbers) {
+    int sum = sum(numbers);
+    return (double) sum / numbers.length;
+  }
+
+  public int addOddNumbers(int[] numbers) {
+    int sum = 0;
+    for (int num : numbers) {
+      if (num % 2 != 0) {
+        sum += num;
+      }
+    }
+    return sum;
+  }
+
+  public int addEvenNumbers(int[] numbers) {
+    int sum = 0;
+    for (int num : numbers) {
+      if (num % 2 == 0) {
+        sum += num;
+      }
+    }
+    return sum;
+  }
+
   public static void main(String[] args) {
     App app = new App();
     System.out.println(app.getGreeting());
@@ -30,5 +63,16 @@ public class App {
     int sumOfNumbers = n * (n + 1) / 2;
     double averageOfNumbers = sumOfNumbers / (double) n;
     System.out.println("Sum of 1 to " + n + " is " + sumOfNumbers + ". Average is " + averageOfNumbers + ".");
+
+    int sumOfOdd = 0;
+    int sumOfEven = 0;
+    for (int i = 1; i <= n; i++) {
+      if (i % 2 == 0) {
+        sumOfEven += i;
+      } else {
+        sumOfOdd += i;
+      }
+    }
+    System.out.println("Sum of odd of 1 to " + n + " is " + sumOfOdd + ". Sum of even is " + sumOfEven + ".");
   }
 }
