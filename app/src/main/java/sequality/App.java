@@ -5,7 +5,11 @@ package sequality;
 
 public class App {
   public String getGreeting() {
-    return "Hello World";
+    return "Hello World!";
+  }
+
+  public int sum(int x, int y) {
+    return x + y;
   }
 
   public static void main(String[] args) {
