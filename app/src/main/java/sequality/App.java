@@ -13,6 +13,13 @@ public class App {
   }
 
   public static void main(String[] args) {
-    System.out.println(new App().getGreeting());
+    App app = new App();
+    System.out.println(app.getGreeting());
+
+    int a = 2;
+    int b = 3;
+    int sumResult = app.sum(a, b);
+    double average = sumResult / 2.0;
+    System.out.println("Sum of " + a + " and " + b + " is " + sumResult + ". Average is " + average + ".");
   }
 }
