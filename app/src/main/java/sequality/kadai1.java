@@ -1,6 +1,6 @@
 package sequality;
 
-public class kadai1 {
+public class Kadai1 {
   public int sum(int x, int y) {
     return x + y;
   }
