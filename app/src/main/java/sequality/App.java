@@ -12,6 +12,10 @@ public class App {
     return x + y;
   }
 
+  public double average(int x, int y) {
+    return (double) (x + y) / 2;
+  }
+
   public static void main(String[] args) {
     App app = new App();
     System.out.println(app.getGreeting());
@@ -21,5 +25,10 @@ public class App {
     int sumResult = app.sum(a, b);
     double average = sumResult / 2.0;
     System.out.println("Sum of " + a + " and " + b + " is " + sumResult + ". Average is " + average + ".");
+
+    int n = 10;
+    int sumOfNumbers = n * (n + 1) / 2;
+    double averageOfNumbers = sumOfNumbers / (double) n;
+    System.out.println("Sum of 1 to " + n + " is " + sumOfNumbers + ". Average is " + averageOfNumbers + ".");
   }
 }

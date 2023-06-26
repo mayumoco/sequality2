@@ -20,6 +20,13 @@ public class AppTest {
     assertEquals(expected, calculate.sum(2, 3));
   }
 
+  @Test
+  public void testAverage() {
+    Calculate calculate = new Calculate();
+    double expected = 2.5;
+    assertEquals(expected, calculate.average(2, 3), 0.001);
+  }
+
 }
 
 /*
